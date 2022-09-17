@@ -4,9 +4,9 @@ import { galleryItems } from './gallery-items.js';
 // console.log(galleryItems);
 
 const galleryRef = document.querySelector(".gallery");
-const marrkupOfGallery = createMarkupOfGallery(galleryItems);
+const markupOfGallery = createMarkupOfGallery(galleryItems);
 
-galleryRef.insertAdjacentHTML("beforeend", marrkupOfGallery);
+galleryRef.insertAdjacentHTML("afterbegin", markupOfGallery);
 
 function createMarkupOfGallery(galleryItems) {
     return galleryItems.map(({ preview, original, description}) => `<div class="gallery__item">
